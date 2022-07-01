@@ -3,7 +3,7 @@ from QuestionGenerator import createFullQuestion
 import time
 
 def send_tweet() -> None:
-    client = get_temp_client()
+    client = get_Twitter_Client()
     question = createFullQuestion()
     print("Tweeting:  \n")
     print(f"{question}")
@@ -13,9 +13,8 @@ def send_tweet() -> None:
 
 def main():
 
-    
+    # 2 hours is 7200    
     while True:
-    # 4 hours is 7200
         print("Generating tweet...")
         send_tweet()
         time.sleep(7200)
