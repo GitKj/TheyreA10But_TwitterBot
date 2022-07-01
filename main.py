@@ -1,4 +1,4 @@
-from twitter_client import get_Twitter_Client, get_temp_client
+from twitter_client import get_Twitter_Client
 from QuestionGenerator import createFullQuestion
 import time
 
